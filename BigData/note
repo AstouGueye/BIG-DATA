@@ -1,0 +1,16 @@
+#!usr/bin/python
+# -*- coding iso-8859-1 -*- 
+chaine = "adore"
+
+with open("AFINN-111.txt", "r") as fichier:
+    for ligne in fichier.readline():
+        if chaine in ligne:
+            print ligne
+    fichier.close()
+
+------------------
+with open("AFINN-111.txt", "r") as f:
+  for line in f.readline():
+    if " adore	" in line:
+      print(line)
+--------------
