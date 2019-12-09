@@ -1,5 +1,5 @@
 #!usr/bin/python
-# -*- coding iso-8859-1 -*- 
+# -*- coding iso-8859-1 -*-
 chaine = "adore"
 
 with open("AFINN-111.txt", "r") as fichier:
@@ -14,3 +14,8 @@ with open("AFINN-111.txt", "r") as f:
     if " adore	" in line:
       print(line)
 --------------
+#----------------commande git----------------
+#git add
+#git status
+#git commit -a
+#git push

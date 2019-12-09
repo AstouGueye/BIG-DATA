@@ -2,8 +2,7 @@ import oauth2 as oauth
 
 import urllib2 as urllib
 
-
-
+#Les clés de notre page twitter
 api_key = "bfrzljA9EmLC7uZjb5Qt6lGq9"
 api_secret = "cZ7juq8ZFjVJMTxmLqzXONOqV3V3jBcHGk5StasWzARKZnQlWh"
 access_token_key = "721323229470703616-IrZXRhyoG1FwKUogN4q0l8J6j1xc8F1"
@@ -30,7 +29,7 @@ def twitterreq(url, method, parameters):
   req = oauth.Request.from_consumer_and_token(oauth_consumer,
                                              token=oauth_token,
                                              http_method=http_method,
-                                             http_url=url, 
+                                             http_url=url,
                                              parameters=parameters)
 
   req.sign_request(signature_method_hmac_sha1, oauth_consumer, oauth_token)
